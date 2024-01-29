@@ -1,19 +1,21 @@
-import React from "react";
-import Book from "./components/Book";
-import { Routes, Route } from "react-router-dom";
-import SignUp from "./components/SignUp";
-import BookInfo from "./components/BookInfo";
+import { useState } from 'react'
+import './App.css'
+import Homepage from './components/Homepage'
+import Signuppage from './components/Signuppage'
+import { Routes,Route } from 'react-router-dom'
 
-function App () {
-    return (
-        <div>
-            <Routes>
-                <Route path="/" element={<Book />} />
-                <Route path="/register" element={<SignUp/>} />
-                <Route path="/bookinfo" element={<BookInfo/>} />
-            </Routes>
-        </div>
-    );
+function App() {
+
+  return (
+    // navigate between different pages
+    <>
+  <Routes>
+    <Route path='/' element={<Homepage />}></Route>
+    <Route path='/Signuppage' element={<Signuppage />}></Route>
+  </Routes>
+  
+    </>
+  )
 }
 
-export default App;
+export default App
