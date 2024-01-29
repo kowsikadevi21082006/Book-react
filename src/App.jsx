@@ -1,21 +1,19 @@
-import { useState } from 'react'
-import './App.css'
-import Homepage from './components/Homepage'
-import Signuppage from './components/Signuppage'
-import { Routes,Route } from 'react-router-dom'
+import React from "react";
+import Book from "./components/Book";
+import { Routes, Route } from "react-router-dom";
+import SignUp from "./components/SignUp";
+import BookInfo from "./components/BookInfo";
 
 function App() {
-
   return (
-    // navigate between different pages
-    <>
-  <Routes>
-    <Route path='/' element={<Homepage />}></Route>
-    <Route path='/Signuppage' element={<Signuppage />}></Route>
-  </Routes>
-  
-    </>
-  )
+    <div>
+      <Routes>
+        <Route path="/" element={<Book />} />
+        <Route path="/register" element={<SignUp/>} />
+        <Route path="/bookinfo" element={<BookInfo/>} />
+      </Routes>
+    </div>
+  );
 }
 
-export default App
+export default App;
