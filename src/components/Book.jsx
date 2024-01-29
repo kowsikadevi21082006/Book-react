@@ -3,6 +3,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import logo from "../assets/kalviumLogo.png";
 import registerImg from "../assets/register.png";
+import offerLogo from "../assets/offerLogo.png";
 import "../App.css";
 import noImage from "../assets/no-image.jpg";
 import booksImage from "../assets/books.png";
@@ -86,6 +87,7 @@ function Book() {
         <img src={booksImage} alt="" />
         <div>
           <img src={offerLogo} style={{display:'block',margin:'auto'}}/> 
+          <h1 style={{paddingBottom:'30px'}}>CHRISTMAS OFFER</h1>
         </div>
       </div>
       <div
