@@ -120,7 +120,7 @@ function Book() {
             );
           })
         ) : (
-          <h1 style={{ color: "red" }}>No Books Available</h1>
+          <h1 style={{ color: "red" }}>No Books Avaliable</h1>
         )}
       </div>
     </div>
