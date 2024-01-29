@@ -1,0 +1,264 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Inknut Antiqua";
+    background-color: #fff;
+
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.logo img{
+    height: 80px;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo h3 {
+    margin-top: -20px;
+}
+.login-div {
+    width: 200px;
+}
+.register-btn {
+    height: 42px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.register-btn:hover {
+    padding: 2px;
+}
+
+.banner {
+    height: 280px;
+    width: 100%;
+    background-image: url("");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.9;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+
+.banner h1 {
+    letter-spacing: 1rem;
+    font-size: 40px;
+    font-family: "Irish Grover";
+    text-shadow: 4px 4px 6px black;
+    -webkit-text-stroke: 1px black;
+}
+
+.books-containter {
+    padding: 20px 0 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.books img {
+    height: 80%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.books {
+    margin: 24px;
+    border-radius: 10px;
+    height: 300px;
+    width: 188px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 4px 18px #777777;
+    transition: transform 0.3s ease-out ;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.books::-webkit-scrollbar {
+width: 0px;
+}
+
+.books:hover{
+transform: scale(1.07);
+cursor: pointer;
+}
+
+span {
+  margin: 4px;
+  color: rgb(94, 90, 90);
+  font-style: normal;
+}
+
+p {
+  font-size: 14px;
+  padding: 3px;
+  color: black;
+}
+
+
+input {
+  width: 460px;
+  height: 36px;
+  border-radius: 10px;
+  border: 0;
+  padding-left: 26px;
+  box-shadow: 1px 3px 8px rgb(78, 78, 78);
+  margin: auto;
+}
+
+.logo + div {
+  position: relative;
+}
+
+.fa-search {
+  position: absolute;
+  right: 24px;
+  top: 10px;
+  color: rgb(114, 112, 112);
+}
+
+/* form styles */
+
+.form-page{
+  height: 100vh;
+  width: 100%;
+  background-image: url(./assets/formBg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+form{
+  border: 5px solid #00C1FF;
+  width: 36vw;
+  height: 90vh;
+  border-radius: 10px;
+  box-shadow: 0px 0px 36px black;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  background-color: rgb(220, 204, 235)
+}
+
+
+
+form p {
+  color: red;
+  font-size: 17px;
+}   
+
+.form-title {
+  background-color: #00C1FF;
+  color: white;
+  padding: 18px;
+  font-family: "Itim";
+  margin-bottom: 80px;
+  -webkit-text-stroke: 1px black;
+}
+
+.registerBtn {
+  width: fit-content;
+  margin: 36px auto;
+  color: white;
+  background-color: green;
+  padding:10px 18px;
+  font-weight: bolder;
+  border-radius: 5px;
+  border: 0;
+}
+
+form input{
+  font-size:17px;
+  width: 270px;
+}
+
+
+.registerBtn:hover{
+  transform:scale(1.08);
+  background-color: rgb(26, 153, 26);
+  cursor: pointer;
+}
+
+.success-msg-div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.582);
+}
+
+.success-msg-div h1{
+  margin-top: 200px;
+  background-color: green;
+  color: white;
+  padding: 20px;
+  font-size:40px;
+}
+
+.success-msg-div div{
+  color: white;
+  background-color: green;
+  padding: 12px;
+}
+
+
+.book-info{
+  margin: 3vh auto;
+  height: 94vh;
+  width: 94vw;
+  border: 2px solid black;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.book-info img{
+  width: auto;
+  height: 500px;
+  margin:0 80px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px black;
+}
+
+
+.book-info div div{
+  margin: 30px;
+  line-height: 150%;
+  font-size: 120%;
+  height: 60vh;
+  overflow-y: scroll;
+}
+
+.book-info button{
+  margin: 20px;
+  padding: 10px 20px;
+  border-color: red;
+  color: red;
+}
+
+.book-info button:hover{
+  cursor: pointer;
+}
